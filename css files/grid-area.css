@@ -1,0 +1,9 @@
+.container {
+    display: grid;
+    grid-template-columns: 550px 300px;
+    grid-template-rows: 350px 700px 40px;
+    grid-template-areas:
+        "top top top top"
+        "middle middle middle cat"
+        "btm btm btm btm";
+}

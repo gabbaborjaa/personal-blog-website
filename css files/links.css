@@ -1,0 +1,16 @@
+a:link {
+    height: fit-content;
+    width: fit content;
+    background: #f5f5f5;
+    font-size: 25px;
+    font-family: Raleway, sans-serif;
+    row-gap: 10px;
+    text-decoration: none;
+    padding: 2.5px;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    background-color: green;
+}

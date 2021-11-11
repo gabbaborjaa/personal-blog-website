@@ -1,0 +1,193 @@
+@import "subheading.css";
+@import "links.css";
+.container {
+  display: grid;
+  grid-template-columns: 500px 350px;
+  grid-template-rows: 350px 735px 40px;
+  grid-template-areas:
+      "top top top top"
+      "middle middle middle cat"
+      "btm btm btm btm";
+}
+.box {
+  display: grid;
+  background: #f5f5f5;
+  color: black;
+  font-size: 40px;
+  font-family: Benton Sans, sans-serif;
+  justify-content: center;
+}
+.header {
+  grid-area: top;
+  display: grid;
+  background-image: url("https://secure.img1-fg.wfcdn.com/im/07677239/resize-h800%5Ecompr-r85/1107/110743659/Marvels + Heroes + Schematics + 33%2527 + L + x + 20.5%2522 + W + Wallpaper + Roll.jpg");
+  text-align: center;
+  align-content: middle;
+  justify-content: center;
+  font-family: Benton Sans, sans-serif;
+  padding: 10%;
+}
+.content {
+  grid-area: middle;
+  font-size: 35px;
+  border-radius: 0%;
+  display: inline-block;
+  padding: 5%;
+}
+.caption {
+  grid-area: cat;
+  border: 1px solid #e6e4d6;
+  background: #f5f5f5;
+  color: black;
+  font-size: 40px;
+  font-family: Benton Sans, sans-serif;
+  align-content: center;
+}
+.footer {
+  grid-area: btm;
+  padding: 1%;
+}
+.title {
+  font-size: 35px;
+  text-align: center;
+}
+.article {
+  align-items: flex-start;
+  background: #f5f5f5;
+  color: black;
+  font-size: 20px;
+  font-family: Benton Sans, sans-serif;
+}
+.quote {
+  font-size: 0.75em;
+  text-align: center;
+  color: black;
+  font-family: Benton Sans, sans-serif;
+  background: #f5f5f5;
+  border: 1px solid #f5f2d0;
+  align-items: middle;
+}
+h1 {
+  font-size: 30px;
+  font-family: Benton Sans, sans-serif;
+  color: white;
+}
+h2 {
+  font-size: 20px;
+  font-family: Raleway light, sans-serif;
+  position: center;
+  text-align: center;
+  align-content: center;
+  color: white;
+}
+h3 {
+  font-size: 15px;
+}
+h4 {
+  font-size: 30px;
+  font-family: Benton Sans, sans-serif;
+}
+div {
+  display: inline-block;
+  padding: 0px;
+  margin: 0px;
+}
+p {
+  font-size: 15px;
+  margin: 10px;
+  padding: 5px;
+}
+ul {
+  background-color: transparent;
+}
+li {
+  display: inline;
+  word-spacing: 5px;
+  background-color: transparent;
+  margin: 5px;
+  padding: 0.5rem 1rem;
+}
+figcaption {
+  font-size: 10px;
+}
+
+img {
+  margin: 10px;
+}
+blockquote {
+  margin: auto;
+  padding: 1px;
+}
+.text-wrap {
+  background: #f5f5f5;
+  font-size: 15px;
+  font-family: Raleway, sans-serif;
+  margin: 10px;
+  padding: 5px;
+  width: 135px
+}
+
+
+/* Medium Screens */
+@media(min-width:600px) and (max-width:900px){
+  .container{
+    display: grid;
+grid-template-columns: 600px;
+grid-template-rows: 350px auto 950px 45px;
+grid-template-areas:
+    "top top top top"
+    "cat cat cat cat"
+    "middle middle middle middle"
+    "btm btm btm btm"
+    ;
+    border: 1px solid red;
+}
+.box {
+  display: grid;
+  background: #f5f5f5;
+  color: black;
+  font-size: 40px;
+  font-family: Benton Sans, sans-serif;
+  justify-content: center;
+  border: 1px solid red;
+}
+}
+
+/* Smaller Screens */
+@media(max-width:600px){
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 350px 780px auto 45px;
+    grid-template-areas:
+      "top"
+      "cat"
+      "middle"
+      "btm";
+    border: 1px solid red;
+  }
+  .box {
+      display: grid;
+      background: #f5f5f5;
+      color: black;
+      font-size: 40px;
+      font-family: Benton Sans, sans-serif;
+      justify-content: center;
+      border: 1px solid red;
+  }    
+  .text-wrap {
+          background: #f5f5f5;
+          font-size: 15px;
+          font-family: Raleway, sans-serif;
+          margin: 10px;
+          padding: 5px;
+          width: 100px
+  }
+  .title {
+      grid-area: cat;
+      display: grid;
+      font-size: 35px;
+      text-align: center;
+  }    
+  
+}

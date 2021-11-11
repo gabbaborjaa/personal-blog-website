@@ -1,0 +1,27 @@
+.header {
+    font-size: 40px;
+}
+.box {
+    font-size: 40px;
+}
+.caption {
+    font-size: 40px;
+}
+.content {
+    font-size: 35px;
+}
+p {
+    font-size: 35px;
+}
+.quote {
+    font-size: 0.75em;
+}
+h2 {
+    font-size: 15px;
+}
+a:link {
+    font-size: 25px;
+}
+title {
+    font-size: 15px;
+}
